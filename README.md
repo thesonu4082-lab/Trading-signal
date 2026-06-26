@@ -59,6 +59,33 @@ trading_signal_db
 
 ---
 
+### Database Configuration
+
+Before running the project, update the MySQL configuration in:
+
+`src/main/resources/application.properties`
+
+Configure the following properties according to your local MySQL setup:
+
+```properties
+spring.datasource.url=jdbc:mysql://localhost:3306/trading_signal_db
+spring.datasource.username=YOUR_USERNAME
+spring.datasource.password=YOUR_PASSWORD
+```
+
+Create a MySQL database named:
+
+```
+trading_signal_db
+```
+
+After updating the database credentials, run the application using:
+
+```bash
+mvn spring-boot:run
+```
+
+
 ## Running the Project
 
 1. Clone the repository
